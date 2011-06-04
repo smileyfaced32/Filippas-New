@@ -122,7 +122,7 @@ ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ 
 /* 4.Footer----------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
-footer { position:fixed; bottom:5px; left:280px; max-height:80px; max-width:840px; z-index:1024; padding:5px 9px 5px 5px; background:transparent url('../images/navbg.png') repeat;
+footer { position:fixed; bottom:5px; left:280px; max-height:80px; max-width:834px; z-index:1024; padding:5px 9px 5px 5px; background:transparent url('../images/navbg.png') repeat;
 -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
 #footercontainer { position:relative; min-width:510px;}
 footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 10px 0px 10px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
@@ -131,7 +131,7 @@ footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0
 #footerLinksLeft p, #footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
 Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
 #footerLinksRight, #footerLinksLeft p a { color:#FBA924; text-transform: uppercase; }
-#footerLinksRight p a { padding:0px 1px 0px 0px; }
+#footerLinksRight p a { padding:0px 0px 0px 0px; }
 #footerLinksLeft p a:hover { color: #fff }
 #footerLinksRight p a:hover { color: #FBA924 }
 #footerLinksIcon { float: left; background:transparent url('../images/menuicon.png') no-repeat; width: 40px; height: 26px; margin: -26px 0px 0px 23px;}
