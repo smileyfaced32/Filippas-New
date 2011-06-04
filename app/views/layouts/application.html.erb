@@ -6,24 +6,12 @@
     <%= render 'layouts/stylesheets' %>
   </head>
   <body>
-	
-	<!-- Scrollbar --> 	
 
-	<div id="mcs_container">
-		<div class="customScrollBox">
-					<div class="scrollcontainer">
-	<!-- Scrollbar -->
 	<div class="container">
 		<%= render 'layouts/header' %>
 		<div id="contentheader"><h1><%= pagetitle %></h1></div>
 			<div class="content"><div class="contentbg"><%= yield %></div></div>
 		</div>
-		<!-- Scrollbar --> 	
-		<div class="dragger_container">
-		    <div class="dragger"></div>
-		    </div>
-		</div>
-		<!-- Scrollbar --> 	
 		      <%= render 'layouts/footer' %>
     </div>
 

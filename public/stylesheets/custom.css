@@ -16,6 +16,7 @@ Contents
 ---------------------------------------------------*/
 /* 1.Reset
 ----------------------------------------------------------------------------------------------------*/
+
 /* RESET */
 body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,input,th,td { margin:0; padding:0; border:0; outline:none; }
 body { line-height:1.5; font-size:90%; }
@@ -85,8 +86,8 @@ a:hover,a:focus { color:#fff; }
 ul.hmenu { list-style: none; margin: 0 0 2em; padding: 0; } 
 ul.hmenu li { display: inline; } 
 #flash_notice, #flash_alert { padding: 5px 8px; margin: 10px 0; } 
-#flash_notice { background-color: #CFC; border: solid 1px #6C6;
-} #flash_alert { background-color: #FCC; border: solid 1px #C66; }
+#flash_notice { background-color: #CFC; border: solid 1px #6C6; } 
+#flash_alert { background-color: #FCC; border: solid 1px #C66; }
 
 /* User show page */
 table.profile { width: 100%; margin-bottom: 0; }
@@ -124,8 +125,7 @@ ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ 
 
 /* FOOTER */
 footer { position:fixed; bottom:0px; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
-footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular,
-sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
+footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
 #footerLinks{ padding:25px 25px 25px 25px; z-index:1024; background:transparent url('../images/navbg.png') repeat; }
 #footerLinksLeft { float: left }
 #footerLinksLeft p, #footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
