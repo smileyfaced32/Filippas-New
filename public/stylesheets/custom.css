@@ -98,7 +98,7 @@ td.sidebar { width: 30%; padding: 1em; vertical-align: top; background: #ffc; }
 /* 3.Header ----------------------------------------------------------------------------------------------------*/
 
 /* NAVIGATION */
-#masthead {margin:80px 0px 80px -8px;}
+#masthead { margin:30px 0px 80px -8px;}
 #nav { height:100%; left:30px; margin-right:40px; padding:100px 25px 0; position:fixed;
 top:0; width:200px; z-index:1022; background:transparent url('../images/navbg.png') repeat; -moz-box-shadow:0px
 -5px 20px #000; -webkit-box-shadow:0px -5px 20px #000;} 
@@ -124,7 +124,7 @@ ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ 
 /* 4.Footer----------------------------------------------------------------------------------------------------*/
 
 /* FOOTER */
-footer { position:fixed; bottom:0px; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
+footer { position:fixed; bottom:0; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
 footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
 #footerLinks{ padding:25px 25px 25px 25px; z-index:1024; background:transparent url('../images/navbg.png') repeat; }
 #footerLinksLeft { float: left }
@@ -138,11 +138,11 @@ Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
 /* 5.Content----------------------------------------------------------------------------------------------------*/
 
 /* CONTENT */
-.container {top:0px; left:0px; margin: 0px 0px 0px 0px; position:absolute; z-index:1000;}
+.container { top:0px; left:0px; margin: 0px 0px 0px 0px; position:absolute; z-index:1000;}
 .content { position:relative;  max-width: 700px; z-index:1021; min-width: 400px; margin:100px 20px 200px 350px;}
 .contentbg {position:relative; padding:25px 25px 25px 25px; z-index:1021; background:transparent url('../images/contentbg.png') repeat; 
 border: 1px solid #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
-#contentheader{position:relative; top:40px; height:60px; min-width:790px; max-width:1370px; padding:1px 25px 1px 0px; z-index:1024; background:transparent url('../images/contentheaderbg.png') repeat; -moz-box-shadow:0px -5px
+#contentheader{position:relative; top:20px; height:60px; min-width:790px; max-width:1370px; padding:1px 25px 1px 0px; z-index:1024; background:transparent url('../images/contentheaderbg.png') repeat; -moz-box-shadow:0px -5px
 50px #000; -webkit-box-shadow:0px -5px 50px #000; }
 #contentheader h1{float:right; font-size:2em; text-transform: uppercase; }
 
