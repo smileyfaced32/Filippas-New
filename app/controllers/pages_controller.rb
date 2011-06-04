@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   def home
     @users = User.all
     @title = "Home"
+    render :layout => "slide"
   end
 
   def about

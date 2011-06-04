@@ -9,9 +9,10 @@
 	<div class="container">
 		<%= render 'layouts/header' %>
 		<div id="contentheader"><h1><%= pagetitle %></h1></div>
-			<div class="content"><div class="contentbg"><%= yield %></div></div>
+			<div class="slidecontent"><div class="slidecontentbg"><%= yield %></div></div>
 		</div>
     </div>
+		<%= render 'layouts/slideshow' %>
 		<%= render 'layouts/footer' %>
   </body>
 </html>
