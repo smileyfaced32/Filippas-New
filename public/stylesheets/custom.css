@@ -4,10 +4,6 @@ Filippas Wine Barrel
 Dennis Fiore
 fiore.dennis@gmail.com
 http://www.filippas.com
-
- /¯¯¯¯¯\'    O    |¯¯¯¯¯¯| |¯¯¯\/¯¯¯|  /¯¯¯¯¯\ 
-|  (/¯¯¯\° |¯¯¯¯| /¯¯ __/  |       '| |   x   |'
- \_____/' |____| |______| |.__|\/|__|  \_____/
 ---------------------------------------------------*/
 
 /*---------------------------------------------------
@@ -64,55 +60,8 @@ blockquote { font-size:1.2em; }
 body { color:#999; background: #1d1d1d fixed; }
 a { color:#999; text-decoration:none; }
 a:hover,a:focus { color:#fff; }
-
-/* 3.Header ----------------------------------------------------------------------------------------------------*/
-
-/* NAVIGATION */
-#masthead {margin:80px 0px 80px -8px;}
-#nav { height:100%; left:30px; margin-right:40px; padding:100px 25px 0; position:fixed;
-top:0; width:200px; z-index:1022; background:transparent url('../images/navbg.png') repeat; -moz-box-shadow:0px
--5px 20px #000; -webkit-box-shadow:0px -5px 20px #000;} 
-#nav .description { font-size:11px; } 
-#nav ul li ul li.lastnavitem { border-bottom: 1px solid #999 !important; }
-.nav { list-style:none; float:left; margin:0px -0px 20px -15px; line-height:1.0; width:16em
-!important; border-bottom:1px solid #333; z-index: 1001 !important; text-transform: uppercase; letter-spacing: 1px;}
-.nav ul { position:absolute; top:-999em; width:16em; /* left offset of subnavs need to match (see below) */ } 
-.nav ul li { width:100%; } 
-.nav li:hover { visibility:inherit; /* fixes IE7 'sticky bug' */ } 
-.nav li { float:left; position:relative; } 
-.nav a { display:block; position:relative; } 
-.nav li:hover ul,.nav li.sfHover ul { left:16em!important; top:2.5em; /* match top ul list item height */ z-index:99; } 
-ul.nav li:hover li ul,ul.nav li.sfHover li ul { top:-999em; } 
-ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ top:0; }
-.nav a { border-top:1px solid #333; padding:1.5em 2em; text-decoration:none; width:12em!important; } 
-.nav a,.nav a:visited { /* visited pseudo selector so IE6 applies text colour*/ color:#AAA; } .nav li { width:16em!important;} 
-.nav li li { background:#000; } 
-.nav li li li { background:#000; } 
-.nav li:hover,.nav li.sfHover,.nav a:focus,.nav a:hover,.nav a:active { color:#FBA924; background:#FFF; outline:0; }
-
-/* CONTENT */
-.container {top:0px; left:0px; margin: 0px 0px 0px 0px; position:absolute; z-index:1000;}
-.content { position:relative;  max-width: 700px; z-index:1021; min-width: 400px; margin:100px 20px 200px 350px;}
-.contentbg {position:relative; padding:25px 25px 25px 25px; z-index:1021; background:transparent url('../images/contentbg.png') repeat; 
-border: 1px solid #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
-#contentheader{position:relative; top:40px; height:60px; min-width:790px; max-width:1370px; padding:1px 25px 1px 0px; z-index:1024; background:transparent url('../images/contentheaderbg.png') repeat; -moz-box-shadow:0px -5px
-50px #000; -webkit-box-shadow:0px -5px 50px #000; }
-#contentheader h1{float:right; font-size:2em; text-transform: uppercase; }
-
-/* FOOTER */
-footer { position:fixed; bottom:0px; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
-footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular,
-sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
-#footerLinks{ padding:25px 25px 25px 25px; z-index:1024; background:transparent url('../images/navbg.png') repeat; }
-#footerLinksLeft { float: left }
-#footerLinksLeft p, #footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
-Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
-#footerLinksLeft p a { color:#FBA924;; text-transform: uppercase }
-#footerLinksRight { float: right; }
-#footerLinksLeft p a:hover, #footerLinksRight p a:hover { color: #FBA924 }
-
-
 .clearfix {display: inline-block;}  /* for IE/Mac */
+
 /* Scollbar */
 #mcs_container{ margin:0 0 0 0px;}
 #mcs_container .customScrollBox{z-index:1040; position:relative; overflow:hidden;}
@@ -139,33 +88,61 @@ ul.hmenu li { display: inline; }
 } #flash_alert { background-color: #FCC; border: solid 1px #C66; }
 
 /* User show page */
-
 table.profile { width: 100%; margin-bottom: 0; }
-
 td { padding: 5px; margin: 0px 0px 0px -30px; }
-
 td.sidebar { width: 30%; padding: 1em; vertical-align: top; background: #ffc; }
-
 .profile img.gravatar { border: 1px solid #999; margin-bottom: -15px; }
 
+/* 3.Header ----------------------------------------------------------------------------------------------------*/
+
+/* NAVIGATION */
+#masthead {margin:80px 0px 80px -8px;}
+#nav { height:100%; left:30px; margin-right:40px; padding:100px 25px 0; position:fixed;
+top:0; width:200px; z-index:1022; background:transparent url('../images/navbg.png') repeat; -moz-box-shadow:0px
+-5px 20px #000; -webkit-box-shadow:0px -5px 20px #000;} 
+#nav .description { font-size:11px; } 
+#nav ul li ul li.lastnavitem { border-bottom: 1px solid #999 !important; }
+.nav { list-style:none; float:left; margin:0px -0px 20px -15px; line-height:1.0; width:16em
+!important; border-bottom:1px solid #333; z-index: 1001 !important; text-transform: uppercase; letter-spacing: 1px;}
+.nav ul { position:absolute; top:-999em; width:16em; /* left offset of subnavs need to match (see below) */ } 
+.nav ul li { width:100%; } 
+.nav li:hover { visibility:inherit; /* fixes IE7 'sticky bug' */ } 
+.nav li { float:left; position:relative; } 
+.nav a { display:block; position:relative; } 
+.nav li:hover ul,.nav li.sfHover ul { left:16em!important; top:2.5em; /* match top ul list item height */ z-index:99; } 
+ul.nav li:hover li ul,ul.nav li.sfHover li ul { top:-999em; } 
+ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ top:0; }
+.nav a { border-top:1px solid #333; padding:1.5em 2em; text-decoration:none; width:12em!important; } 
+.nav a,.nav a:visited { /* visited pseudo selector so IE6 applies text colour*/ color:#AAA; } .nav li { width:16em!important;} 
+.nav li li { background:#000; } 
+.nav li li li { background:#000; } 
+.nav li:hover,.nav li.sfHover,.nav a:focus,.nav a:hover,.nav a:active { color:#FBA924; background:#FFF; outline:0; }
+
+
+/* 4.Footer----------------------------------------------------------------------------------------------------*/
+
+/* FOOTER */
+footer { position:fixed; bottom:0px; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
+footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular,
+sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
+#footerLinks{ padding:25px 25px 25px 25px; z-index:1024; background:transparent url('../images/navbg.png') repeat; }
+#footerLinksLeft { float: left }
+#footerLinksLeft p, #footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
+Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
+#footerLinksLeft p a { color:#FBA924;; text-transform: uppercase }
+#footerLinksRight { float: right; }
+#footerLinksLeft p a:hover, #footerLinksRight p a:hover { color: #FBA924 }
+
+
+/* 5.Content----------------------------------------------------------------------------------------------------*/
+
+/* CONTENT */
+.container {top:0px; left:0px; margin: 0px 0px 0px 0px; position:absolute; z-index:1000;}
+.content { position:relative;  max-width: 700px; z-index:1021; min-width: 400px; margin:100px 20px 200px 350px;}
+.contentbg {position:relative; padding:25px 25px 25px 25px; z-index:1021; background:transparent url('../images/contentbg.png') repeat; 
+border: 1px solid #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
+#contentheader{position:relative; top:40px; height:60px; min-width:790px; max-width:1370px; padding:1px 25px 1px 0px; z-index:1024; background:transparent url('../images/contentheaderbg.png') repeat; -moz-box-shadow:0px -5px
+50px #000; -webkit-box-shadow:0px -5px 50px #000; }
+#contentheader h1{float:right; font-size:2em; text-transform: uppercase; }
+
 /* Backgrounds */
-#coffee{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_coffee.jpg") repeat fixed 0 0 #1D1D1D;}
-
-#food{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_food.jpg") repeat fixed 0 0 #1D1D1D;}
-
-#info{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_info.jpg") repeat fixed 0 0 #1D1D1D;}
-
-#blog{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_blog.jpg") repeat fixed 0 0 #1D1D1D;}
-
-@overflowX(@y: hidden) {
-     overflow: @y;
-     overflow-x: auto;
-     overflow-y: @y;
-     overflow: -moz-scrollbars-horizontal;
-}
-@overflowY(@x: hidden) {
-     overflow: @x;
-     overflow-y: auto;
-     overflow-x: @x;
-     overflow: -moz-scrollbars-vertical;
-}
