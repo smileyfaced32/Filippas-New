@@ -1,0 +1,171 @@
+
+/*---------------------------------------------------
+Filippas Wine Barrel
+Dennis Fiore
+fiore.dennis@gmail.com
+http://www.filippas.com
+
+ /¯¯¯¯¯\'    O    |¯¯¯¯¯¯| |¯¯¯\/¯¯¯|  /¯¯¯¯¯\ 
+|  (/¯¯¯\° |¯¯¯¯| /¯¯ __/  |       '| |   x   |'
+ \_____/' |____| |______| |.__|\/|__|  \_____/
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+Contents
+1.Reset
+2.Global
+3.Header
+4.Footer
+---------------------------------------------------*/
+/* 1.Reset
+----------------------------------------------------------------------------------------------------*/
+/* RESET */
+body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,input,th,td { margin:0; padding:0; border:0; outline:none; }
+body { line-height:1.5; font-size:90%; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; padding:.6em 0; margin:0; font-weight:normal; }
+ul,ol { list-style:none; }
+
+/* 2.Global
+----------------------------------------------------------------------------------------------------*/
+
+/* TYPOGRAPHY */
+fieldset { color:#fff; }
+body,textarea { font-family:Helvetica, Arial; color:#000000; }
+input { font-family:Helvetica, Arial; color:#000000; padding: 6px; margin-bottom: 10px; border-top: 1px solid
+#fff; border-left: 0px; border-right: 0px; border-bottom: 0px;-webkit-transition-property: -webkit-box-shadow,
+background; -webkit-transition-duration: 0.25s; -moz-box-shadow: 0px 0px 2px #fff; -webkit-box-shadow: 0px 0px 2px
+#fff;}
+input:hover { -webkit-box-shadow: 0px 0px 4px #000; background: #ccc; } 
+input[type="submit"] { font-size:2em; width: 200px; color: #000; text-transform: uppercase; text-shadow: #fff 1px
+1px; border-top: 1px solid #fff; margin-top: 10px; background: -webkit-gradient(linear, 0% 0%, 0% 100%,
+from(#fff), to(#ccc)); background: -moz-linear-gradient(19% 75% 90deg,#fff, #ccc);}
+h1,h2,h3,h4,h5,h6 { font-weight:normal; color:#ccc; }
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a { color:#fff; }
+h1 { font-size:3em; line-height:1; margin-bottom:.5em; }
+h2 { font-size:2em; margin-bottom:.75em; }
+h3 { font-size:1.5em; line-height:1; margin-bottom:1em; }
+h4 { font-size:1.2em; line-height:1.25; margin-bottom:1.25em; }
+h5 { font-size:1em; font-weight:bold; margin-bottom:1.5em; }
+h6 { font-size:1em; font-weight:bold; }
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img { margin:0; }
+p { margin-bottom:1.2em; }
+.fancy,blockquote,p.credits,.postmetadata { font-style:italic; font-family:Georgia; text-shadow:1px 1px 1px #000; }
+.sub { text-transform:uppercase; border-bottom:1px solid #999; letter-spacing:2px; font-weight:100; margin:24px 0; }
+blockquote { font-size:1.2em; }
+
+/* CLEAR FLOATS */
+.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.clearfix:after { clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0; }
+.clearfix { display:inline-block; }
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+
+/* DEFAULTS */
+body { color:#999; background: #1d1d1d fixed; }
+a { color:#999; text-decoration:none; }
+a:hover,a:focus { color:#fff; }
+
+/* 3.Header ----------------------------------------------------------------------------------------------------*/
+
+/* NAVIGATION */
+#masthead {margin:80px 0px 80px -8px;}
+#nav { height:100%; left:30px; margin-right:40px; padding:100px 25px 0; position:fixed;
+top:0; width:200px; z-index:1022; background:transparent url('../images/navbg.png') repeat; -moz-box-shadow:0px
+-5px 20px #000; -webkit-box-shadow:0px -5px 20px #000;} 
+#nav .description { font-size:11px; } 
+#nav ul li ul li.lastnavitem { border-bottom: 1px solid #999 !important; }
+.nav { list-style:none; float:left; margin:0px -0px 20px -15px; line-height:1.0; width:16em
+!important; border-bottom:1px solid #333; z-index: 1001 !important; text-transform: uppercase; letter-spacing: 1px;}
+.nav ul { position:absolute; top:-999em; width:16em; /* left offset of subnavs need to match (see below) */ } 
+.nav ul li { width:100%; } 
+.nav li:hover { visibility:inherit; /* fixes IE7 'sticky bug' */ } 
+.nav li { float:left; position:relative; } 
+.nav a { display:block; position:relative; } 
+.nav li:hover ul,.nav li.sfHover ul { left:16em!important; top:2.5em; /* match top ul list item height */ z-index:99; } 
+ul.nav li:hover li ul,ul.nav li.sfHover li ul { top:-999em; } 
+ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ top:0; }
+.nav a { border-top:1px solid #333; padding:1.5em 2em; text-decoration:none; width:12em!important; } 
+.nav a,.nav a:visited { /* visited pseudo selector so IE6 applies text colour*/ color:#AAA; } .nav li { width:16em!important;} 
+.nav li li { background:#000; } 
+.nav li li li { background:#000; } 
+.nav li:hover,.nav li.sfHover,.nav a:focus,.nav a:hover,.nav a:active { color:#FBA924; background:#FFF; outline:0; }
+
+/* CONTENT */
+.container {top:0px; left:0px; margin: 0px 0px 0px 0px; position:absolute; z-index:1000;}
+.content { position:relative;  max-width: 700px; z-index:1021; min-width: 400px; margin:100px 20px 200px 350px;}
+.contentbg {position:relative; padding:25px 25px 25px 25px; z-index:1021; background:transparent url('../images/contentbg.png') repeat; 
+border: 1px solid #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
+#contentheader{position:relative; top:40px; height:60px; min-width:790px; max-width:1370px; padding:1px 25px 1px 0px; z-index:1024; background:transparent url('../images/contentheaderbg.png') repeat; -moz-box-shadow:0px -5px
+50px #000; -webkit-box-shadow:0px -5px 50px #000; }
+#contentheader h1{float:right; font-size:2em; text-transform: uppercase; }
+
+/* FOOTER */
+footer { position:fixed; bottom:0px; left:270px; height:50px; z-index:1024; min-width:790px; max-width:1020px; padding: 5px 20px 5px 10px;}
+footer p {border-right: 2px dotted #999; border-left: 2px dotted #999; padding:0px 4px 0px 4px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular,
+sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
+#footerLinks{ padding:25px 25px 25px 25px; z-index:1024; background:transparent url('../images/navbg.png') repeat; }
+#footerLinksLeft { float: left }
+#footerLinksLeft p, #footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
+Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
+#footerLinksLeft p a { color:#FBA924;; text-transform: uppercase }
+#footerLinksRight { float: right; }
+#footerLinksLeft p a:hover, #footerLinksRight p a:hover { color: #FBA924 }
+
+
+.clearfix {display: inline-block;}  /* for IE/Mac */
+/* Scollbar */
+#mcs_container{ margin:0 0 0 0px;}
+#mcs_container .customScrollBox{z-index:1040; position:relative; overflow:hidden;}
+#mcs_container .dragger_container{z-index:1040; position:relative; width:2px; height:525px; float:right; margin:40px 5px 0 0px; background:#000; cursor:pointer -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:s-resize;}
+#mcs_container .dragger{position:absolute; width:2px;background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#mcs_container .dragger_pressed{position:absolute; width:4px; margin-left:-1px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
+
+/*** ESSENTIAL NAV STYLES ***/
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+ul.hmenu { list-style: none; margin: 0 0 2em; padding: 0; } 
+ul.hmenu li { display: inline; } 
+#flash_notice, #flash_alert { padding: 5px 8px; margin: 10px 0; } 
+#flash_notice { background-color: #CFC; border: solid 1px #6C6;
+} #flash_alert { background-color: #FCC; border: solid 1px #C66; }
+
+/* User show page */
+
+table.profile { width: 100%; margin-bottom: 0; }
+
+td { padding: 5px; margin: 0px 0px 0px -30px; }
+
+td.sidebar { width: 30%; padding: 1em; vertical-align: top; background: #ffc; }
+
+.profile img.gravatar { border: 1px solid #999; margin-bottom: -15px; }
+
+/* Backgrounds */
+#coffee{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_coffee.jpg") repeat fixed 0 0 #1D1D1D;}
+
+#food{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_food.jpg") repeat fixed 0 0 #1D1D1D;}
+
+#info{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_info.jpg") repeat fixed 0 0 #1D1D1D;}
+
+#blog{ background: url("http://www.gocommonwealth.com/single_bg_images/bg_blog.jpg") repeat fixed 0 0 #1D1D1D;}
+
+@overflowX(@y: hidden) {
+     overflow: @y;
+     overflow-x: auto;
+     overflow-y: @y;
+     overflow: -moz-scrollbars-horizontal;
+}
+@overflowY(@x: hidden) {
+     overflow: @x;
+     overflow-y: auto;
+     overflow-x: @x;
+     overflow: -moz-scrollbars-vertical;
+}

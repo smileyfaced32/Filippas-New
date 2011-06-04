@@ -1,0 +1,96 @@
+<script> 
+$(function() {
+	$( "#tabs" ).tabs();
+});
+</script>
+
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
+
+<p><%= link_to "Take Customer Survey", surveys_new_path %></p>
+ <p><%= link_to "Edit User Profile", edit_user_registration_path %></p>
+
+<% if user_signed_in? %>
+	 <% if can? :manage, @users %>
+<h1>Admin Controls</h1>
+<div id="tabs"> 
+	<ul> 
+	<li><a href="#tabs-1">Users </a></li>
+      <li><a href="#tabs-2">Survey </a></li>
+		<li><a href="#tabs-3">Menus</a></li>
+	<li><a href="#tabs-4">Events</a></li>
+
+      
+	</ul> 
+   <div id="tabs-1">
+
+		<table>
+		  <thead>
+		    <tr>
+				<th></th>
+				<th>User</th>
+				<th>Email</th>
+				<th>Birthday</th>
+				<th>Gender</th>
+				<th>Newsletter</th>
+				<th>Role</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	 <% for user in @users %>
+			    <tr>
+					<td><%= link_to "Edit", edit_user_path(user) %> | <%= link_to "Delete", user, :confirm => "Are you sure?", :method => :delete %></td>
+					<td><%= user.first_name %> <%= user.last_name %>  </td>
+					<td><%= user.email %>  </td>
+					<td><%= user.birthday %>  </td> 
+					<td><%= user.gender %>  </td>
+					<td><%= user.newsletter %>  </td>
+					<td><%= user.role %>  </td>
+			    </tr>
+		  </tbody>  
+		<% end %>
+		</table>
+
+	</p>
+   </div>
+
+   <div id="tabs-2">
+
+	<table>
+	  <thead>
+	    <tr>
+			<th></th>
+				<th>Name</th>
+				<th>Coupon Code</th>
+				<th>Visit Date</th>
+			<th>Check Number</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+
+	      <% for survey in @surveys %>
+	    <tr>
+	     <td><%= link_to "Destroy", survey, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td><%= survey.first_name %>&nbsp;<%= survey.last_name %></td>
+		 <td><%= survey.id %></td>
+		<td><%=  survey.visit_month %>/<%=  survey.visit_day %>/<%=  survey.visit_year %> </td>	   
+		<td><%=  survey.check_number %> </td>
+	    </tr>
+	    <% end %>
+	  </tbody>  
+	</table>
+   </div>
+
+	<div id="tabs-3"> 
+		<p>add menu</p> 
+	</div> 
+	<div id="tabs-4">
+		   <p>add event</p>
+
+	   </div>
+</div>
+
+  <% end %>
+ 
+<% end %>

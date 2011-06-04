@@ -1,0 +1,10 @@
+li {float:left; padding:100px 20px 20px 5px; list-style:none; margin:0px 0px 0px 0px;}
+#masthead {float:left;}
+#social {visibility:hidden;}
+#footerLinksRight {visibility:hidden;}
+#slideshow-api {visibility:hidden;}
+#jbgallery {visibility:hidden; }
+a { color:#999; text-decoration:none; font-size:1em; }
+#contentheader {float:left; font-size:1em; padding:40px 0px 20px 100px;}
+p {float:left;}
+body {width:750px;}

@@ -1,0 +1,24 @@
+<h1>Users#show</h1>
+<p></p>
+<p>User: <%= @user.last_name %> <%= @user.first_name %></p>
+<p>Email: <%= @user.email if @user.email %></p>
+<p>Role:<%= @user.role %></p>
+<% if can? :manage, @users %>
+	Hello Admin!
+	<% end %>
+	
+	
+	<table class="profile" summary="Profile information">
+	  <tr>
+	    <td class="main">
+	      <h1>
+	 
+	        <%= @user.first_name %> <%= @user.last_name %>
+	      </h1>
+	    </td>
+	    <td class="sidebar round">
+	      <strong>Name</strong> <%= @user.first_name %> <%= @user.last_name %><br />
+	      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+	    </td>
+	  </tr>
+	</table>  
