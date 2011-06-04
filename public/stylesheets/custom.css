@@ -134,7 +134,7 @@ Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0 }
 #footerLinksRight p a { padding:0px 1px 0px 0px; }
 #footerLinksLeft p a:hover { color: #fff }
 #footerLinksRight p a:hover { color: #FBA924 }
-#footerLinksIcon { float: left; background:transparent url('../images/menu.png') no-repeat; width: 40px; height: 26px; margin: -26px 0px 0px 23px;}
+#footerLinksIcon { float: left; background:transparent url('../images/menuicon.png') no-repeat; width: 40px; height: 26px; margin: -26px 0px 0px 23px;}
 #footerLinksMenu { float: left; margin: -26px 0px 0px 5px;}
 #footerLinksMenu p {font-size:1.5em; font-weight:bold; text-transform: uppercase; margin: 26px -2px 0px -7px; padding:0px 10px 0px 10px;}
 
