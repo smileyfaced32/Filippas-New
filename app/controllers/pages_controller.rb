@@ -46,8 +46,12 @@ class PagesController < ApplicationController
     @title = "Hours"
   end
   
-  def meetings
-    @title = "Meetings"
+  def carryout
+    @title = "Carry Out"
+  end
+  
+  def gallery
+    @title = "Gallery"
   end
   
 end

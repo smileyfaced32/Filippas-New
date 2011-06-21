@@ -96,8 +96,8 @@ td.sidebar { width: 30%; padding: 1em; vertical-align: top; background: #ffc; }
 /* 3.Header ----------------------------------------------------------------------------------------------------*/
 
 /* NAVIGATION */
-#masthead { margin:25px 0px 60px -8px;}
-#nav { height:100%; left:30px; margin-right:40px; padding:100px 25px 0; position:fixed;
+#masthead { margin:25px 0px 30px -8px;}
+#nav { height:100%; left:30px; margin-right:40px; padding:70px 25px 0px 25px; position:fixed;
 top:0; width:200px; z-index:1022; background:transparent url('../images/navbg.png') repeat; -moz-box-shadow:0px
 -5px 20px #000; -webkit-box-shadow:0px -5px 20px #000;} 
 #nav .description { font-size:11px; } 
@@ -124,13 +124,13 @@ ul.nav li li:hover ul,ul.nav li li.sfHover ul { left:16em; /* match ul width */ 
 /* FOOTER */
 footer { position:fixed; bottom:5px; left:280px; max-height:80px; max-width:834px; z-index:1024; padding:5px 9px 5px 5px; background:transparent url('../images/navbg.png') repeat;
 -moz-box-shadow:0px -5px 50px #000; -webkit-box-shadow:0px -5px 50px #000;}
-#footercontainer { position:relative; min-width:510px;}
-footer p { padding:0px 10px 0px 10px; color: #797979; font-size: 12px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
+#footercontainer { position:relative; min-width:450px; max-width:810px;}
+footer p { padding:0px 10px 0px 10px; color: #797979; font-size: 11px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 10px 0 0 10px; float: left }
 #footerLinksRight, #footerLinksLeft { float: left; }
 #footerLinksRight { float: right; }
-#footerLinksLeft p { color: #deddd3; font-size: 12px; font-family: Helvetica,
+#footerLinksLeft p { color: #deddd3; font-size: 11px; font-family: Helvetica,
 Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0; border-left: 2px dotted #999;}
-#footerLinksRight p { color: #deddd3; font-size: 12px; font-family: Helvetica,
+#footerLinksRight p { color: #deddd3; font-size: 11px; font-family: Helvetica,
 Geneva, Arial, SunSans-Regular, sans-serif; line-height: 18px; margin: 0; border-right: 2px dotted #999;}
 #footerLinksRight, #footerLinksLeft p a { color:#FBA924; text-transform: uppercase; }
 #footerLinksRight p a { padding:0px 0px 0px 0px; }

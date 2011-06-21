@@ -10,11 +10,6 @@
 		<%= render 'layouts/header' %>
 		<div id="contentheader"><h1><%= pagetitle %></h1></div>
 			<div class="content"><div class="contentbg">
-				<%= breadcrumb :pretext => "",
-			                 :separator => ">",
-			                 :autoroot => true,
-			                 :show_root_alone => true,
-			                 :link_last => true %>
 			<%= yield %></div></div>
 		</div>
     </div>
