@@ -32,6 +32,9 @@ Filippas::Application.routes.draw do
         match '/events',   :to => 'pages#events'
         match '/blog',    :to => 'pages#blog'
         match '/contact', :to => 'pages#contact'
-        match '/menu', :to => 'pages#menu'
+        match '/menu', :to => 'menu#index'
+        match '/restaurant_menu', :to => 'menu#restaurant_menu'
+        match '/catering_menu', :to => 'menu#catering_menu'
+        match '/banquets_menu', :to => 'menu#banquets_menu'
         root :to => 'pages#home'
     end

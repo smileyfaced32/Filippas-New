@@ -9,16 +9,18 @@
 	<div class="container">
 		<%= render 'layouts/header' %>
 		<div id="contentheader"><h1><%= pagetitle %></h1></div>
-			<div class="slidecontent"><div class="slidecontentbg">
+			<div class="content"><div class="contentbg">
 				<%= breadcrumb :pretext => "",
 			                 :separator => ">",
 			                 :autoroot => true,
 			                 :show_root_alone => true,
 			                 :link_last => true %>
-			<%= yield %></div></div>
+				<%= render 'menu/menuheader' %>
+				<%= yield %>
+				<%= render 'menu/menufooter' %>
+		</div></div>
 		</div>
     </div>
-		<%= render 'layouts/slideshow' %>
 		<%= render 'layouts/footer' %>
   </body>
 </html>

@@ -49,8 +49,5 @@ class PagesController < ApplicationController
   def meetings
     @title = "Meetings"
   end
-  def menu
-    @title = "Menu"
-  end
   
 end
