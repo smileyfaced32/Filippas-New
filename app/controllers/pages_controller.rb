@@ -54,4 +54,12 @@ class PagesController < ApplicationController
     @title = "Gallery"
   end
   
+  def charities
+    @title = "Charities"
+  end
+  
+  def aboutthechef
+    @title = "About The Chef"
+  end
+  
 end

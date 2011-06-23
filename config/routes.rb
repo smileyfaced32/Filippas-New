@@ -1,5 +1,7 @@
 Filippas::Application.routes.draw do
 
+
+
     devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
     devise_scope :user do
       get '/login' => 'devise/sessions#new'
@@ -33,6 +35,8 @@ Filippas::Application.routes.draw do
         match '/blog',    :to => 'pages#blog'
         match '/contact', :to => 'pages#contact'
         match '/gallery', :to => 'pages#gallery'
+        match '/aboutthechef', :to => 'pages#aboutthechef'
+        match '/charities', :to => 'pages#charities'
         match '/menu', :to => 'menu#index'
         match '/restaurant_menu', :to => 'menu#restaurant_menu'
         match '/catering_menu', :to => 'menu#catering_menu'
