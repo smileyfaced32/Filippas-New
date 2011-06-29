@@ -74,4 +74,8 @@ class PagesController < ApplicationController
     @title = "Happy Hour"
   end
   
+  def holidays
+    @title = "Holidays"
+  end
+  
 end

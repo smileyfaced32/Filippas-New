@@ -40,6 +40,7 @@ Filippas::Application.routes.draw do
         match '/winestore', :to => 'pages#winestore'
         match '/emailclub', :to => 'pages#emailclub'
         match '/happyhour', :to => 'pages#happyhour'
+        match '/holidays', :to => 'pages#holidays'
         match '/menu', :to => 'menu#index'
         match '/restaurant_menu', :to => 'menu#restaurant_menu'
         match '/catering_menu', :to => 'menu#catering_menu'
