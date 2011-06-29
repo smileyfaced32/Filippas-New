@@ -62,4 +62,16 @@ class PagesController < ApplicationController
     @title = "About The Chef"
   end
   
+  def winestore
+    @title = "Wine Store"
+  end
+  
+  def emailclub
+    @title = "Email Club"
+  end
+  
+  def happyhour
+    @title = "Happy Hour"
+  end
+  
 end
